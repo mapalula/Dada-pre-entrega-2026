@@ -1,0 +1,281 @@
+
+/*Reseteo de las márgenes dadas por defecto*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Times New Roman, serif;
+    line-height: 1.5;
+    color: 12, 13, 59;
+    background: 245, 180, 39;
+}
+
+.contenedor {
+    max-width: 2100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/*=========Header=========*/
+header {
+    background: 12, 13, 59
+    color: black;
+    padding: 15px 0;
+}
+
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: 370352;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #0ADDF5;
+}
+
+/*========BANER DE BIENVENIDA===========*/
+
+.hero {
+    background: #1f6f66;
+    color: wheat;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/*===========MAIN + GRILLA PRODUCTOS============*/
+
+main {
+    padding-bottom: 50px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 28px;
+}
+
+.grilla-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    flex: 250 1 250px;
+    background: white;
+    border: 3px solid blueviolet;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba (0,0,0,0.15)
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.categoria {
+    font-size: 12px;
+    text-transform: uppercase;
+    
+    color:#1f6f66;
+    letter-spacing: 1px;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: auto;
+}
+
+.card button {
+    background: #1f6f66;
+    color: bisque;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:hover {
+    background: #0ADDF5;
+}
+
+
+/*=========Footer=========*/
+
+footer {
+    background: #1f6f66;
+    color: aquamarine;
+    padding: 40px 0 20px;
+}
+
+.footer-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1 1 250px;
+}
+
+.columna h4 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.columna ul {
+    list-style: none;
+}
+
+.columna a {
+    color: #1f6f66;
+    text-decoration: none;
+}
+
+.columna a:hover {
+    color: aqua;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.redes a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.redes a:hover {
+    background: #1f6f66;
+    color: azure;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+
+/*============SECCION DE CONTACTO==========*/
+
+.bloque-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.datos-contacto h3 {
+    font-size: 18px;
+    color: #1f6f66;
+    margin-bottom: 10px;
+}
+
+.datos-contacto ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.datos-contacto li {
+    padding:  6px 0; 
+}
+
+.datos-contacto a{
+    color: #333;
+    text-decoration: underline;
+}
+
+.datos-contacto a:hover {
+    color: #1f6f66;
+    text-decoration: underline;
+}
+
+.nota {
+    font-size: 13px;
+    color: #333;
+}
+
+.mapa {
+    flex: 1 1 420px;
+    min-height: 340px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid wheat;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border: 0;
+    display: block;
+}
